@@ -17,8 +17,12 @@ app.use(express.json());
 app.use('/api/auth', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
-
+app.get('/', (req, res) => {
+    res.status(200).send('Hello!');
+  });
+  
 app.use(errorHandler);
+
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
