@@ -397,8 +397,6 @@ router.get('/stats/summary', protectAdmin, async (req, res) => {
 });
 export default router;
 
-
-// import Order from '../models/order.js';
 // import { protectAdmin } from '../middleware/authMiddleware.js';
 // import auth from '../middleware/authMiddleware.js';
 
